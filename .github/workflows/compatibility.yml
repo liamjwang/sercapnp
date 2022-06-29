@@ -2,6 +2,10 @@ name: IntelliJ Platform Plugin Compatibility
 
 on:
   push:
+    branches: [ "master" ]
+  pull_request:
+    branches: [ "master" ]
+  workflow_dispatch:
 
 jobs:
   compatibility:
