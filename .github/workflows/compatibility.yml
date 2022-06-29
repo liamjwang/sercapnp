@@ -36,7 +36,7 @@ jobs:
             ideaIU:LATEST-EAP-SNAPSHOT
             pycharmPC:LATEST-EAP-SNAPSHOT
             pycharmPY:LATEST-EAP-SNAPSHOT
-            riderRD:LATEST-EAP-SNAPSHOT
+#            riderRD:LATEST-EAP-SNAPSHOT
 
       - name: Get log file path and print contents
         run: |
