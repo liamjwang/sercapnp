@@ -23,6 +23,12 @@ jobs:
       - name: Build the plugin using Gradle
         run: ./gradlew buildPlugin
 
+      - name: Upload artifact
+        uses: actions/upload-artifact@v1
+        with:
+          name: plugin-artifact
+          path: ./build/distributions/
+
       - name: Verify Plugin on IntelliJ Platforms
         id: verify
         uses: ChrisCarini/intellij-platform-plugin-verifier-action@latest
